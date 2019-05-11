@@ -1,5 +1,5 @@
 import { Router } from 'express'; 
-import { starShipController } from '../controllers/starShipController';
+import { starShipController } from "../controllers/starShipController";
 // já traduzido
 
 class StarShipRoutes {
