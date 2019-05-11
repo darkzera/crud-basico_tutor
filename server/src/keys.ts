@@ -2,7 +2,7 @@ export default {
    database: {
       host: 'localhost',
       user: 'root',
-      password: '132344',
+      //password: '013',
       database: 'db_awing',
    }
 }

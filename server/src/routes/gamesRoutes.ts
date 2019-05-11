@@ -1,7 +1,8 @@
 import { Router } from 'express'; 
-import { gamesController } from '../controllers/gamesController';
+import { starShipController } from '../controllers/starShipController';
+// aqui importa games controller < - Mudar para starshipController - >
 
-class GamesRoutes {
+class StarShipRoutes {
 
    public router: Router = Router();
 
@@ -10,17 +11,17 @@ class GamesRoutes {
    }
 
    config(): void{
-      this.router.get('/',gamesController.list);
-      this.router.get('/:id',gamesController.getOne);
-      this.router.post('/', gamesController.create);
-      this.router.delete('/:id',gamesController.delete)   
-      this.router.put('/:id',gamesController.update)   
+      this.router.get('/',starShipController.list);
+      this.router.get('/:id',starShipController.getOne);
+      this.router.post('/', starShipController.create);
+      this.router.delete('/:id',starShipController.delete)   
+      this.router.put('/:id',starShipController.update)   
       //
    }
 
 
 }
-const gamesRoutes = new GamesRoutes();
-export default gamesRoutes.router;
+const starShipRoutes = new StarShipRoutes();
+export default starShipRoutes.router;
 
 

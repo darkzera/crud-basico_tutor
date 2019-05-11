@@ -8,6 +8,11 @@ const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const gamesRoutes_1 = __importDefault(require("./routes/gamesRoutes"));
+const starShipRoutes_1 = __importDefault(require("./routes/starShipRoutes"));
+// games routes substituir por -> starshipRoutes (rotas de starship-> naves) *done
+// traduzido
+// importado
+//
 class Server {
     constructor() {
         this.app = express_1.default();
@@ -24,6 +29,7 @@ class Server {
     route() {
         this.app.use('/', indexRoutes_1.default);
         this.app.use('/api/games', gamesRoutes_1.default);
+        this.app.use('/api/naves', starShipRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get('port'), () => {

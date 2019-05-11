@@ -5,7 +5,8 @@ export default {
       user: 'root',
       //user: 'mysql',
       //port: '3006',
-      //password: '',
+      password: '',
+
       database: 'db_awing',
    }
 }

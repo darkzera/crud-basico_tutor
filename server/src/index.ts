@@ -2,9 +2,13 @@ import express, { Application }from 'express';
 
 import morgan from 'morgan';
 import cors from 'cors'
-
 import indexRoutes from './routes/indexRoutes';
 import gamesRoutes from './routes/gamesRoutes';
+import StarShipRoutes from './routes/starShipRoutes';
+// games routes substituir por -> starshipRoutes (rotas de starship-> naves) *done
+// traduzido
+// importado
+//
 
 class Server {
 
@@ -26,6 +30,7 @@ class Server {
    route(): void {
       this.app.use('/', indexRoutes);
       this.app.use('/api/games', gamesRoutes);
+      this.app.use('/api/naves', StarShipRoutes);
    }
    start(): void{
       this.app.listen(this.app.get('port'), () =>{ 
