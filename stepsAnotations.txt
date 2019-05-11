@@ -1,0 +1,2 @@
+npm init --yes -> cria package.json conf do projeto
+8C718D3B5072E1F5:
