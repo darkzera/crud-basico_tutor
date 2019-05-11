@@ -2,7 +2,12 @@ insercao dos arquivos ingame * done
 
 unzip e atualizacao para modelo feito @LAB * done 
 
-tradução completa (realizar testes finais**) from games to starship
+tradução completa (realizar testes finais**) from games to starship {
+   // games routes substituir por -> starshipRoutes (rotas de starship-> naves) *done
+   // traduzido
+   // importado
+   //
+}
 
 - - - - - - - - - - - - - - - - - - - - - -
 testando e experimentando GIT
