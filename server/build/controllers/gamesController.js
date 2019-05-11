@@ -13,41 +13,41 @@ class GamesController {
     getOne(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const games = yield database_1.pola.query('SELECT * FROM games WHERE id = ?', [id]);
-            console.log(games);
-            if (games.length > 0) {
-                return res.json(games[0]);
+            const starship = yield database_1.pola.query('SELECT * FROM starship WHERE cod_starship = ?', [id]);
+            console.log(starship);
+            if (starship.length > 0) {
+                return res.json(starship[0]);
             }
-            res.status(404).json({ text: 'damnn u nao existe' });
+            res.status(404).json({ text: 'não tem' });
         });
     }
     list(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const games = yield database_1.pola.query('SELECT * FROM games');
-            res.json(games);
+            const starship = yield database_1.pola.query('SELECT * FROM starship');
+            res.json(starship);
         });
     }
     create(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield database_1.pola.query('INSERT INTO games set ?', [req.body]);
+            yield database_1.pola.query('INSERT INTO starship set ?', [req.body]);
             res.json({
-                message: 'Game saved!!!'
+                message: 'Nave saved!!!'
             });
         });
     }
     delete(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const games = yield database_1.pola.query('DELETE FROM games WHERE id = ?', [id]);
-            console.log(games);
-            res.json({ message: 'Game deleted' });
+            const starship = yield database_1.pola.query('DELETE FROM starship WHERE cod_starship = ?', [id]);
+            console.log(starship);
+            res.json({ message: 'Starship deletado' });
         });
     }
     update(req, res) {
         res.json({
-            text: 'Updating game: ' + req.params.id
+            text: 'atualizando...' + req.params.cod_starship
         });
     }
 }
 exports.gamesController = new GamesController();
-//export default gamesController; 
+//export default starshipController; 

@@ -3,7 +3,9 @@ export default {
    database: {
       host: 'localhost',
       user: 'root',
-      password: '013',
-      database: 'ng_games_db',
+      //user: 'mysql',
+      //port: '3006',
+      //password: '',
+      database: 'db_awing',
    }
 }
