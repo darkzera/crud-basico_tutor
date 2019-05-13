@@ -11,7 +11,16 @@ tradução completa (realizar testes finais**) from games to starship {
    //
 }
 
-unificacao de scripts BUILD e DEV
+unificacao de scripts BUILD e DEV {
+   $ npm run build
+         +
+   $ npm run dev 
+
+
+    | | | | | |
+    V V V V V V
+    $ npm run build
+}
 - - - - - - - - - - - - - - - - - - - - - -
 testando e experimentando GIT
 aulas
