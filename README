@@ -26,7 +26,9 @@ unificacao de scripts BUILD e DEV {
 T&E GIT
 1
 2
-3
+3 {
+   pull
+}
 
 
 
