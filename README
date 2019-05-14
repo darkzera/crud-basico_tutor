@@ -1,3 +1,4 @@
+changelog
 teste de IMPORT TsuTSUQUYOMI (Vim plugin) 
 - - - - - - - - - - - - - - - - - - - - - -
 insercao dos arquivos ingame * done
@@ -5,11 +6,11 @@ insercao dos arquivos ingame * done
 unzip e atualizacao para modelo feito @LAB * done 
 
 tradução completa (realizar testes finais**) from games to starship {
-   // games routes substituir por -> starshipRoutes (rotas de starship-> naves) *done
-   // traduzido
-   // importado
+   // games routes substituir por -> starshipRoutes (rotas de starship-> naves) *
+   // traduzido*
+   // importado*
    //
-}
+} * done
 
 unificacao de scripts BUILD e DEV {
    $ npm run build
@@ -20,10 +21,9 @@ unificacao de scripts BUILD e DEV {
     | | | | | |
     V V V V V V
     $ npm run build
-}
+} * done
 - - - - - - - - - - - - - - - - - - - - - -
-testando e experimentando GIT
-aulas
+T&E GIT
 1
 2
 3
