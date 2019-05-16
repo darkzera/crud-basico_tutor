@@ -3,10 +3,7 @@ export default {
    database: {
       host: 'localhost',
       user: 'root',
-      //user: 'mysql',
-      //port: '3006',
-      password: '',
-
+      password: '132344',
       database: 'db_awing',
    }
 }
