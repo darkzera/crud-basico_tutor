@@ -1,7 +1,7 @@
 CHANGELOG
 tutor_crud {
    pt 1 * (backend) [...]
-   pt 2 (front)[bootstrap, bootswatch]  {
+   pt 2 (front)[bootstrap, bootswatch]  { TODO//
       tmp:1:51_tutor
       -> possibilitar acesso de .css localmente, não via link online
       [bootsrap*.css, client/src/index.html arquivos a check
@@ -23,7 +23,7 @@ tradução completa (realizar testes finais**) from games to starship {
    //
 } * done
 
-unificacao de scripts BUILD e DEV {
+unificacao de scripts BUILD e DEV { ==> verificar (possível multiplicidade de processos chamados) <==  TODO
    $ npm run build
          +
    $ npm run dev 
@@ -37,7 +37,7 @@ T&E GIT
 2
 3 {
    pull
-   teste 1 
+   teste 1  *TODO// 
 }
 ---------------------------------------------
 
