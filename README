@@ -3,7 +3,7 @@ tutor_crud {
    pt 1 * (backend) [...]
    pt 2 (front)[bootstrap, bootswatch]  { TODO//
       tmp:1:51_tutor
-      -> possibilitar acesso de .css localmente, não via link online
+      -> possibilitar acesso de .css localmente, não via link online <--- não funciona essa buceta AFFF
       [bootsrap*.css, client/src/index.html arquivos a check
    }
 
