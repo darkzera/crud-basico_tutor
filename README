@@ -2,10 +2,9 @@ CHANGELOG
 tutor_crud {
    pt 1 * (backend) [...]
    pt 2 (front)[bootstrap, bootswatch]  {
-
-
-
       tmp:1:51_tutor
+      -> possibilitar acesso de .css localmente, não via link online
+      [bootsrap*.css, client/src/index.html arquivos a check
    }
 
 
