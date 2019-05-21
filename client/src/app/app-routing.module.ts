@@ -7,18 +7,16 @@ const routes: Routes = [
       path: '',
       redirectTo: '/spaceships',
       pathMatch: 'full',
-
    },
+
    {
       path: 'spaceships',
       component: StarshipListComponent
    }
-
-
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+   imports: [RouterModule.forRoot(routes)],
+   exports: [RouterModule]
 })
 export class AppRoutingModule { }

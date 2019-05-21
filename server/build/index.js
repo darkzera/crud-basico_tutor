@@ -29,7 +29,7 @@ class Server {
     route() {
         this.app.use('/', indexRoutes_1.default);
         this.app.use('/api/games', gamesRoutes_1.default);
-        this.app.use('/api/naves', starShipRoutes_1.default);
+        this.app.use('/api/starship', starShipRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get('port'), () => {
