@@ -1,15 +1,17 @@
-<div class="col-md-4" *ngFor="let nave of naves">
+<div class="col-md-4" *ngFor="let nave of naves"> 
    <div class="card text-center">
 
       <div class="card-header">
-         {{nave.nom_starship}}
-
+         Nome nave: {{nave.nom_starship}}
       </div>
 
       <div class="card-body">
+         <p>{{nave.descricao}}</p>
+         <a href="" class="btn btn-info btn-block">
+            EDIT NAVE
+         </a>
+
       </div>
-
-
 
 
 

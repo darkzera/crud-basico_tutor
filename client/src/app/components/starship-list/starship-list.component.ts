@@ -9,7 +9,7 @@ import { Starship } from "../../models/Starship";
 })
 export class StarshipListComponent implements OnInit {
 
-   naves: any = [];
+   naves: any = []; // responde pro html
 
    constructor(private starshipService: StarshipsService) { }
 
