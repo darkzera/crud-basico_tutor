@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <div class="container">
-      <a class="navbar-brand" href="#">Mysql Crud</a>
+      <a class="navbar-brand" routerLink="/">Mysql Crud</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
@@ -8,11 +8,13 @@
          <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-               <a class="nav-link" href="/spaceship">Spaceship (Naves)</a>
+               <a class="nav-link" routerLink="/starships" rounterLinkActive="active"><i class="fas fa-starshippad"> </i>
+                  Starship (Naves)</a>
             </li>
 
             <li class="nav-item">
-               <a class="nav-link" href="/spaceship/add">Registrar naves</a>
+               <a class="nav-link" routerLink="/starships/add" rounterLinkActive="active"><i class="fas fa-plus-circle"> </i>
+                  Registrar naves</a>
             </li>
 
          </ul>

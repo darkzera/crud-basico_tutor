@@ -5,11 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 //- 
+import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { StarshipFormComponent } from './components/starship-form/starship-form.component';
 import { StarshipListComponent } from './components/starship-list/starship-list.component';
 import { StarshipsService } from './services/starships.service';
-
 import { HttpClientModule } from "@angular/common/http/";
 //- 
 
@@ -20,14 +20,18 @@ import { HttpClientModule } from "@angular/common/http/";
       StarshipFormComponent,
       StarshipListComponent
    ],
+
    imports: [
       BrowserModule,
       AppRoutingModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule,
    ],
+
    providers: [
       StarshipsService,
    ],
+
    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,19 +1,21 @@
-<div class="col-md-4" *ngFor="let nave of naves"> 
+<div class="col-md-5" *ngFor="let nave of naves"> 
    <div class="card text-center">
 
-      <div class="card-header">
-         Nome nave: {{nave.nom_starship}}
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+         Nave: {{nave.nom_starship}}
+         <button class="btn btn-danger" (click)="delNave(nave.cod_starship)"> <i class="far fa-trash-alt">   </i>
+         </button>
       </div>
 
       <div class="card-body">
-         <p>{{nave.descricao}}</p>
+         <p><img [src]=nave.imagem width="230" height="140" align="center"></p>
+         <p>Sobre: {{nave.descricao}}</p>
+         <p>Código da nave: {{nave.cod_starship}} | Tipo de cod: {{nave.cod_type}}</p>
+         <p>Data-hora registro: {{nave.datahora}}</p>
          <a href="" class="btn btn-info btn-block">
-            EDIT NAVE
+            Editar informações
          </a>
-
       </div>
-
-
 
    </div>
 </div>
