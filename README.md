@@ -7,9 +7,9 @@
 - [...]
 
 ### pt 2 (front) - [bootstrap, bootswatch]
--       possibilitar acesso de .css localmente, não via link online <- !funciona 
--       possível correção para acesso de .css local
--       problemas com padronização -> nave/naves/starship/spaceship --- > NEED REFACTOR
+- possibilitar acesso de .css localmente, não via link online <- !funciona 
+- possível correção para acesso de .css local
+- problemas com padronização -> nave/naves/starship/spaceship --- > NEED REFACTOR
 
 
 ---------------------------------------------
