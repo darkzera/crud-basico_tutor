@@ -1,9 +1,9 @@
-#This is a Changelog instead README
+# This is a Changelog instead README
 ---------------------------------------------
 
 ##Tutor crud 
 
-### pt 1 * (backend) - [...]
+### pt 1 (backend) - [...]
 - *done*
 - *done*
 - *done*
@@ -12,7 +12,6 @@
 - possibilitar acesso de .css localmente, não via link online <- !funciona 
 - possível correção para acesso de .css local
 - problemas com padronização -> nave/naves/starship/spaceship --- > NEED REFACTOR
-
 
 ---------------------------------------------
 insercao dos arquivos ingame * done
