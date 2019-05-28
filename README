@@ -1,4 +1,4 @@
-<p> CHANGELOG </p> 
+#CHANGELOG
 tutor_crud {
    pt 1 * (backend) [...]
       pt 2 (front)[bootstrap, bootswatch]  { TODO//
