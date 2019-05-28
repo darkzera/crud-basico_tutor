@@ -1,8 +1,9 @@
-- 
 #This is a Changelog instead README
 ---------------------------------------------
-tutor crud 
-pt 1 * (backend) [...]
+##tutor crud 
+### pt 1 * (backend)
+- [...]
+
 pt 2 (front)[bootstrap, bootswatch]   TODO//
    tmp:1:51 tutor
       -> possibilitar acesso de .css localmente, não via link online <--- não funciona essa buceta AFFF
