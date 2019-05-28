@@ -3,8 +3,10 @@
 
 ##Tutor crud 
 
-### pt 1 * (backend)
-- [...]
+### pt 1 * (backend) - [...]
+- *done*
+- *done*
+- *done*
 
 ### pt 2 (front) - [bootstrap, bootswatch]
 - possibilitar acesso de .css localmente, não via link online <- !funciona 
