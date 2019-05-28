@@ -11,8 +11,10 @@ pt 2 (front)[bootstrap, bootswatch]  { TODO//
 
 
 }
+-
 ---------------------------------------------
-teste de IMPORT TsuTSUQUYOMI (Vim plugin) <---???w
+
+teste de IMPORT TsuTSUQUYOMI (Vim plugin) 
 ---------------------------------------------
 insercao dos arquivos ingame * done
 
