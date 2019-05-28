@@ -15,16 +15,16 @@
 
 
 ---------------------------------------------
-insercao dos arquivos ingame * done
+insercao dos arquivos ingame done
 
-unzip e atualizacao para modelo feito @LAB * done 
+unzip e atualizacao para modelo feito @LAB done 
 
 ###Traduction
-tradução completa (realizar testes finais**) from games to starship 
-// games routes substituir por -> starshipRoutes (rotas de starship-> naves) *
-// traduzido*
-// importado*
-// * done
+tradução completa (realizar testes finais) from games to starship 
+// games routes substituir por -> starshipRoutes (rotas de starship-> naves) 
+// traduzido
+// importado
+// done
 
 ##Scripts
 unificacao de scripts BUILD e DEV  ==> verificar (possível multiplicidade de processos chamados) <==  TODO
@@ -34,12 +34,12 @@ $ npm run dev
 | | | | | |
 V V V V V V
 $ npm run build
-   * done
+   done
 quebra de scripts novamente, possível duplicação de processos (?)
 
 ##Git 
    1
    2
-   3 pull(teste 1  )*TODO// 
+   3 pull(teste 1  )TODO// 
 
    ---------------------------------------------
