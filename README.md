@@ -1,7 +1,9 @@
-#CHANGELOG
+- 
+#This is a Changelog instead README
+---------------------------------------------
 tutor crud 
 pt 1 * (backend) [...]
-pt 2 (front)[bootstrap, bootswatch]  { TODO//
+pt 2 (front)[bootstrap, bootswatch]   TODO//
    tmp:1:51 tutor
       -> possibilitar acesso de .css localmente, não via link online <--- não funciona essa buceta AFFF
       ... continuação do desenvolvimento do front end
@@ -9,12 +11,6 @@ pt 2 (front)[bootstrap, bootswatch]  { TODO//
       problemas com padronização -> nave/naves/starship/spaceship --- > NEED REFACTOR
 
 
-
-}
--
----------------------------------------------
-
-teste de IMPORT TsuTSUQUYOMI (Vim plugin) 
 ---------------------------------------------
 insercao dos arquivos ingame * done
 
