@@ -20,13 +20,13 @@ const routes: Routes = [
       path: 'starships/add',
       component: StarshipFormComponent
    },
+
    {
       path: 'starships/add/:id',
       component: StarshipFormComponent
    }
 
 ];
-
 @NgModule({
    imports: [RouterModule.forRoot(routes)],
    exports: [RouterModule]
