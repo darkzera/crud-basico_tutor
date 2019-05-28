@@ -14,16 +14,8 @@
 - problemas com padronização -> nave/naves/starship/spaceship --- > NEED REFACTOR
 
 ---------------------------------------------
-insercao dos arquivos ingame  done
 
-unzip e atualizacao para modelo feito @LAB  done 
-
-### Traduction
-insercao dos arquivos ingame done
-
-unzip e atualizacao para modelo feito @LAB done 
-
-###Traduction
+### Traducao
 
 tradução completa (realizar testes finais) from games to starship 
 // games routes substituir por -> starshipRoutes (rotas de starship-> naves) 
@@ -32,18 +24,20 @@ tradução completa (realizar testes finais) from games to starship
 // done
 
 ## Scripts
-unificacao de scripts BUILD e DEV  ==> verificar (possível multiplicidade de processos chamados) <==  TODO
-$ npm run build
-+
-$ npm run dev 
-| | | | | |
-V V V V V V
-$ npm run build
+unificacao de scripts BUILD e DEV  verificar (possível multiplicidade de processos chamados) TODO:
+
+$ npm run build + $ npm run dev 
+         | | | | | |
+         V V V V V V
+       $ npm run build
+
+
 quebra de scripts novamente, possível duplicação de processos (?)
+---------------------------------------------
 
 ##Git 
    1
    2
    3 pull(teste 1  )TODO// 
 
-   ---------------------------------------------
+---------------------------------------------
