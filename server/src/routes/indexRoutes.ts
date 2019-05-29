@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { indexController } from '../controllers/indexController';
 
 import { starShipController } from '../controllers/starShipController';
-
+import { starShip_pilotController } from '../controllers/starship_pilotController';
 import { gamesController } from '../controllers/gamesController';
 
 class IndexRoutes {

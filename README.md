@@ -26,13 +26,9 @@ tradução completa (realizar testes finais) from games to starship
 ## Scripts
 unificacao de scripts BUILD e DEV  verificar (possível multiplicidade de processos chamados) TODO:
 
-$ npm run build + $ npm run dev 
-         | | | | | |
-         V V V V V V
-       $ npm run build
-
-
+$ npm run build + $ npm run dev  = $ npm run build
 quebra de scripts novamente, possível duplicação de processos (?)
+
 ---------------------------------------------
 
 ##Git 

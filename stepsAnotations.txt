@@ -1,2 +1,22 @@
-npm init --yes -> cria package.json conf do projeto
-8C718D3B5072E1F5:
+mkdir server/
+server/ $ npm init --yes => cria package.json conf do projeto
+
+-----------------------------------------
+server/ $ npm i[install] "modulos auxiliares" {
+   express
+   morgan
+   promise-mysql
+   cors
+   nodemon -D
+}
+
+server/ $  npm i[install] typescript
+server/ $ npm --init => tsconfig.json
+server/ $  tsc
+
+-----------------------------------------
+
+-> criar `objeto`Routes.ts
+-> incluir em index.ts
+
+
