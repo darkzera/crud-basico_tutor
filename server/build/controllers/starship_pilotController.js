@@ -13,7 +13,7 @@ class Starship_PilotController {
     getOne(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const starship_pilot = yield database_1.pola.query('SELECT * FROM starship WHERE cod_starship = ?', [id]);
+            const starship_pilot = yield database_1.pola.query('SELECT * FROM starship_pilot WHERE cod_starship = ?', [id]);
             console.log(starship_pilot);
             if (starship_pilot.length > 0) {
                 return res.json(starship_pilot[0]);
@@ -35,7 +35,7 @@ class Starship_PilotController {
             yield database_1.pola.query('INSERT INTO starship_pilot set ?', [req.body]);
             console.log('================starship_pilot criada');
             res.json({
-                message: 'Nave criada'
+                message: 'starship_pilot criada'
             });
         });
     }

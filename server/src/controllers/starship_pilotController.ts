@@ -6,7 +6,7 @@ class Starship_PilotController {
 
    public async getOne(req: Request, res: Response): Promise<any>{
       const { id } = req.params;
-      const starship_pilot = await pola.query('SELECT * FROM starship WHERE cod_starship = ?', [id]);
+      const starship_pilot = await pola.query('SELECT * FROM starship_pilot WHERE cod_starship = ?', [id]);
       console.log(starship_pilot);
       if (starship_pilot.length > 0) {
          return res.json(starship_pilot[0]);
@@ -25,7 +25,7 @@ class Starship_PilotController {
       await pola.query('INSERT INTO starship_pilot set ?', [req.body]);
       console.log('================starship_pilot criada');
       res.json({
-         message: 'Nave criada' });
+         message: 'starship_pilot criada' });
    }
 
    public async delete(req: Request, res: Response): Promise<any>{
