@@ -30,7 +30,7 @@ export class StarshipsService {
       return this.http.post(`${this.API_URI}/starship`, starship);
    }
 
-   updateStarship(id: string, updatedStarship: Starship): Observable<Starship>{
+   updateStarship(id: number, updatedStarship: Starship): Observable<Starship>{
       return this.http.put(`${this.API_URI}/naves/${id}`, updatedStarship);
    }
 

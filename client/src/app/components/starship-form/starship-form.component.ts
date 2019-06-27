@@ -65,7 +65,7 @@ export class StarshipFormComponent implements OnInit {
       )
    }
 
-   // exemplo do nicolas parte 1 => metodo
+   // modelo pt 1 => metodo
    //updateSquad() {
    //  delete this.squad.datahora;
    // this.squadServices.updateSquad(this.squad.cod_esquadrao, this.squad)
