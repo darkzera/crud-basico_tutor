@@ -29,7 +29,6 @@ export class StarshipFormComponent implements OnInit {
       if (params.cod_esquadrao) {
         console.log(params.cod_esquadrao)
         this.starshipService.getStarshipById(params.cod_starship)
-        //this.starshipService.getSquad(params.cod_esquadrao)
           .subscribe(
             res => {
               console.log(res);

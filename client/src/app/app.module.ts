@@ -1,24 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-//- 
 import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { HttpClientModule } from "@angular/common/http/";
+
+// - Starship imports
 import { StarshipFormComponent } from './components/starship-form/starship-form.component';
 import { StarshipListComponent } from './components/starship-list/starship-list.component';
 import { StarshipsService } from './services/starships.service';
-import { HttpClientModule } from "@angular/common/http/";
-//- 
+// - Starship_pilot imports
+import { StarshipPilotListComponent } from './components/starship-pilot-list/starship-pilot-list.component';
+import { StarshipPilotFormComponent } from './components/starship-pilot-form/starship-pilot-form.component';
+import { Starships_pilotService } from './services/starship_pilot.service';
+
 
 @NgModule({
    declarations: [
       AppComponent,
       NavigationComponent,
       StarshipFormComponent,
-      StarshipListComponent
+      StarshipListComponent,
+      StarshipPilotListComponent,
+      StarshipPilotFormComponent,
    ],
 
    imports: [
@@ -30,6 +35,7 @@ import { HttpClientModule } from "@angular/common/http/";
 
    providers: [
       StarshipsService,
+      Starships_pilotService,
    ],
 
    bootstrap: [AppComponent]

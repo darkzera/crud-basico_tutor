@@ -1,4 +1,3 @@
-
 <div class="row">
    <div class="col-md-8 offset-md-5">
       <div class="card">
@@ -6,16 +5,16 @@
 
             <form>
                <div class="form-group">
-                  <p> <input type="text" name="title" [(ngModel)]="naveAdd.descricao" placeholder="Title" class="form-control" autofocus>
+                  <p> <input type="text" name="Cód personagem piloto" [(ngModel)]="nave_PilotoAdd.cod_personagem" placeholder="Cod piloto" class="form-control" autofocus>
                   </p>
                </div>
 
                <div class="form-group">
-                  <textarea name="descricao" [(ngModel)]="naveAdd.descricao" placeholder="Descricao" rows="2" class=form-control> </textarea>
+                  <textarea name="descricao" [(ngModel)]="nave_PilotoAdd.cod_starship" placeholder="Cod nave pilotada" rows="2" class=form-control> </textarea>
                </div>
 
                <div class="form-group">
-                  <input type="url" name="imagem" [(ngModel)]="naveAdd.imagem" placeholder="Imagem" class="form-control" autofocus>
+                  <input type="url" name="imagem" [(ngModel)]="nave_PilotoAdd.descricao" placeholder="descricao" class="form-control" autofocus>
                </div>
                <button class="btn btn-sucess btn-block" (click)="salvarNave()">
                   Enviar!

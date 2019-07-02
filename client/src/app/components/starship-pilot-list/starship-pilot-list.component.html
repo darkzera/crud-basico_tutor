@@ -1,0 +1,21 @@
+<div class="col-md-5" *ngFor="let nave of naves"> 
+   <div class="card text-center">
+
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+         Nave: {{nave.nom_starship}}
+         <button class="btn btn-danger" (click)="delNave(nave.cod_starship)"> <i class="far fa-trash-alt">   </i>
+         </button>
+      </div>
+
+      <div class="card-body">
+         <p><img [src]=nave.imagem width="230" height="140" align="center"></p>
+         <p>Sobre piloto: {{nave.descricao}}</p>
+         <p>Código da nave pilotada: {{nave.cod_starship}} | Tipo de cod: {{nave.cod_type}}</p>
+         <p>Data-hora registro: {{nave.datahora}}</p>
+         <a href="" class="btn btn-info btn-block">
+            Editar informações
+         </a>
+      </div>
+
+   </div>
+</div>

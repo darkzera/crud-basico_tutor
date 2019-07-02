@@ -7,6 +7,7 @@ class IndexRoutes {
         this.router = express_1.Router();
         this.config();
     }
+    // ok
     config() {
         this.router.get('/', indexController_1.indexController.index);
     }
