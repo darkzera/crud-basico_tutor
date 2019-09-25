@@ -11,7 +11,7 @@
     "workbench.editor.showIcons": false, // removes icon from opened files in tabs
     "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
     "workbench.statusBar.visible": true, // removes the status bar
-    "workbench.colorTheme": "Fresh Dark", // adds a subtle indent guide (needs Indenticator extension)
+    "workbench.colorTheme": "Quiet Light", // adds a subtle indent guide (needs Indenticator extension)
     "workbench.iconTheme": "vscode-simpler-icons",
     "open-in-vim.openMethod": "integrated-terminal",
     "workbench.sideBar.location": "left",
