@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { AuthenticationService } from "../services/authentication.service";
+const expressJwt = require('express-jwt');
 
 
 @Injectable({ providedIn: 'root' })

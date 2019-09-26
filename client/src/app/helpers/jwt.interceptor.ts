@@ -5,8 +5,12 @@ import { Observable } from 'rxjs';
 import { AuthenticationService } from "../services/authentication.service";
 import { environment } from "../../environments/environment";
 
+
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
+
+    //module.exports = jwt;
+
     constructor(private authenticationService: AuthenticationService) { }
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
@@ -21,7 +25,9 @@ export class JwtInterceptor implements HttpInterceptor {
                 }
             });
         }
-
         return next.handle(request);
     }
+
+
+
 }

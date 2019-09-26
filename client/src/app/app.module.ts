@@ -14,11 +14,11 @@ import { StarshipsService } from './services/starships.service';
 import { StarshipPilotListComponent } from './components/starship-pilot-list/starship-pilot-list.component';
 import { StarshipPilotFormComponent } from './components/starship-pilot-form/starship-pilot-form.component';
 import { Starships_pilotService } from './services/starship_pilot.service';
+// - Autenticacao  
 import { UserService } from "./services/user.service";
 import { AuthenticationService } from "./services/authentication.service";
-import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
     declarations: [

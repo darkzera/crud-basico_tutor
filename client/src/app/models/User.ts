@@ -4,7 +4,7 @@ export interface User {
     username?: string;
     firstName?: string;
     lastName?: string;
-    role: Role;
     token?: string;
     datahora?: Date;
+    role: Role;
 }
