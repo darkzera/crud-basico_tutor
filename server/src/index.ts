@@ -1,4 +1,4 @@
-import express, { Application }from 'express';
+import express, { Application, Router }from 'express';
 
 import morgan from 'morgan';
 import cors from 'cors'
@@ -37,9 +37,10 @@ class Server {
       this.app.use('/api/starship', StarShipRoutes);
       this.app.use('/api/starship_pilot', StarShip_PilotRoutes);
    }
-   start(): void{
-      this.app.listen(this.app.get('port'), () =>{ 
-      console.log('Server na porta ', this.app.get('port'))});
+   start(): void {
+      this.app.listen(this.app.get('port'), () => {
+         console.log('Server na porta ', this.app.get('port'))
+      });
    }
 }
 
