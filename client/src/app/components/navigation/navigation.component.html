@@ -1,30 +1,47 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
    <div class="container">
       <a class="navbar-brand" routerLink="/">Mysql Crud</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
          <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-               <a class="nav-link" routerLink="/starships" rounterLinkActive="active"><i class="fas fa-starshippad"> </i>
+               <a class="nav-link" routerLink="/starships" rounterLinkActive="active"><i class="fas fa-starshippad">
+                  </i>
                   Naves</a>
             </li>
 
             <li class="nav-item">
-               <a class="nav-link" routerLink="/starships/add" rounterLinkActive="active"><i class="fas fa-plus-circle"> </i>
+               <a class="nav-link" routerLink="/starships/add" rounterLinkActive="active"><i class="fas fa-plus-circle">
+                  </i>
                   Registrar naves</a>
             </li>
 
             <li class="nav-item">
-               <a class="nav-link" routerLink="/starships_pilot/" rounterLinkActive="active"><i class="fas fa-starshippad"> </i>
+               <a class="nav-link" routerLink="/starships_pilot/" rounterLinkActive="active"><i
+                     class="fas fa-starshippad"> </i>
                   Pilotos </a>
             </li>
 
-            <li class="nav-item">
-               <a class="nav-link" routerLink="/starships_pilot/add" rounterLinkActive="active"><i class="fas fa-plus-circle"> </i>
-                  Registrar piloto de naves</a>
+            <li *ngIf="authority === 'pm'" class="nav-item">
+               <a class="nav-link" routerLink="/starships_pilot/add" rounterLinkActive="active"><i
+                     class="fas fa-plus-circle"> </i>
+                  Registrar piloto de naves privado </a>
+            </li>
+
+            <li *ngIf="!authority" class="nav-item">
+               <a class="nav-link" routerLink="auth/login">Login</a>
+            </li>
+
+            <li *ngIf="authority" class="nav-item">
+               <a class="nav-link" routerLink="signout">Sair</a>
+            </li>
+
+            <li *ngIf="authority" class="nav-item">
+               <a class="nav-link" routerLink="home">Conta</a>
             </li>
 
          </ul>

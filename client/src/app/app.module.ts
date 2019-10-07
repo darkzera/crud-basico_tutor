@@ -14,6 +14,15 @@ import { StarshipsService } from './services/starships.service';
 import { StarshipPilotListComponent } from './components/starship-pilot-list/starship-pilot-list.component';
 import { StarshipPilotFormComponent } from './components/starship-pilot-form/starship-pilot-form.component';
 import { Starships_pilotService } from './services/starship_pilot.service';
+// -  Processo de autenticacao  
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { PmComponent } from './pm/pm.component';
+import { AdminComponent } from './admin/admin.component';
+
+import { httpInterceptorProviders } from './auth/auth-interceptor';
 
 
 @NgModule({
@@ -24,6 +33,12 @@ import { Starships_pilotService } from './services/starship_pilot.service';
       StarshipListComponent,
       StarshipPilotListComponent,
       StarshipPilotFormComponent,
+      LoginComponent,
+      RegisterComponent,
+      HomeComponent,
+      UserComponent,
+      PmComponent,
+      AdminComponent,
    ],
 
    imports: [
@@ -34,6 +49,7 @@ import { Starships_pilotService } from './services/starship_pilot.service';
    ],
 
    providers: [
+      httpInterceptorProviders,
       StarshipsService,
       Starships_pilotService,
    ],

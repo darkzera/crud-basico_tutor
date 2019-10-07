@@ -2,6 +2,8 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { Starship_pilot } from 'src/app/models/Starship_pilot';
 import { Starships_pilotService } from 'src/app/services/starship_pilot.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
+import { TokenStorageService } from 'src/app/auth/token-storage.service';
 
 @Component({
   selector: 'app-starship-pilot-form',
@@ -18,10 +20,29 @@ export class StarshipPilotFormComponent implements OnInit {
      descricao: '',
      datahora: new Date(),
   };
+  private roles: string[];
+  private authority: string;
 
-  constructor(private starship_pilotService : Starships_pilotService, private router: Router, private activedRoute: ActivatedRoute) {}
+  constructor(private starship_pilotService : Starships_pilotService, 
+   private router: Router, 
+   private activedRoute: ActivatedRoute,
+   private tokenStorage: TokenStorageService) {}
 
   ngOnInit() {
+   if (this.tokenStorage.getToken()) {
+      this.roles = this.tokenStorage.getAuthorities();
+      this.roles.every(role => {
+        if (role === 'ROLE_ADMIN') {
+          this.authority = 'admin';
+          return false;
+        } else if (role === 'ROLE_PM') {
+          this.authority = 'pm';
+          return false;
+        }
+        this.authority = 'user';
+        return true;
+      });
+    }
 
      /* TODO: FIX
      const params = this.activedRoute.snapshot.params;

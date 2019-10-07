@@ -1,37 +1,41 @@
-<div class="row">
-   <div class="col-md-8 offset-md-5">
-      <div class="card">
-         <div class="card-body">
+   <div *ngIf="authority === 'pm'" class="row">
+      <div class="col-md-8 offset-md-5">
+         <div class="card">
+            <div class="card-body">
 
-            <form>
-               <div class="form-group">
-                  <p> <input type="text" name="Cód personagem piloto" [(ngModel)]="nave_PilotoAdd.cod_personagem" placeholder="Cod piloto" class="form-control" autofocus>
-                  </p>
-               </div>
+               <form>
+                  <div class="form-group">
+                     <p> <input type="text" name="Cód personagem piloto" [(ngModel)]="nave_PilotoAdd.cod_personagem"
+                           placeholder="Cod piloto" class="form-control" autofocus>
+                     </p>
+                  </div>
 
-               <div class="form-group">
-                  <textarea name="descricao" [(ngModel)]="nave_PilotoAdd.cod_starship" placeholder="Cod nave pilotada" rows="2" class=form-control> </textarea>
-               </div>
+                  <div class="form-group">
+                     <textarea name="descricao" [(ngModel)]="nave_PilotoAdd.cod_starship"
+                        placeholder="Cod nave pilotada" rows="2" class=form-control> </textarea>
+                  </div>
 
-               <div class="form-group">
-                  <input type="url" name="imagem" [(ngModel)]="nave_PilotoAdd.descricao" placeholder="descricao" class="form-control" autofocus>
-               </div>
-               <button class="btn btn-sucess btn-block" (click)="salvarNave()">
-                  Enviar!
-               </button>
-            </form>
+                  <div class="form-group">
+                     <input type="url" name="imagem" [(ngModel)]="nave_PilotoAdd.descricao" placeholder="descricao"
+                        class="form-control" autofocus>
+                  </div>
+                  <button class="btn btn-sucess btn-block" (click)="salvarNave()">
+                     Enviar!
+                  </button>
+               </form>
 
+            </div>
          </div>
       </div>
    </div>
-</div>
-<div class="col-md-5 offset-md-2">
-   <div class="card card-body text-center">
-      <img [src]="naveAdd.imagem == '' ? '/assets/images.png' : naveAdd.imagem" class="card-img-top">
-      <h3>{{naveAdd.cod_starship}} -  {{naveAdd.nom_starship}}</h3>
-      <p>{{naveAdd.descricao}} </p>
-      <p>{{naveAdd.datahora | date: 'yyyy-MM-dd'}}</p>
+   <div class="col-md-5 offset-md-2">
+      <div class="card card-body text-center">
+         <img [src]="naveAdd.imagem == '' ? '/assets/images.png' : naveAdd.imagem" class="card-img-top">
+         <h3>{{naveAdd.cod_starship}} - {{naveAdd.nom_starship}}</h3>
+         <p>{{naveAdd.descricao}} </p>
+         <p>{{naveAdd.datahora | date: 'yyyy-MM-dd'}}</p>
 
+      </div>
    </div>
 
-</div>
+

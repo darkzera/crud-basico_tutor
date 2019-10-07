@@ -14,7 +14,7 @@ class StarShipRoutes {
         this.router.post('/', starShipController_1.starShipController.create);
         this.router.delete('/:id', starShipController_1.starShipController.delete);
         this.router.put('/:id', starShipController_1.starShipController.update);
-        //
+        this.router.post('/starships/add', starShipController_1.starShipController.create);
     }
 }
 const starShipRoutes = new StarShipRoutes();

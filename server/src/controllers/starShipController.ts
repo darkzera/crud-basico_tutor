@@ -15,6 +15,8 @@ class StarShipController {
       }
    }
 
+
+
    public async list(req: Request, res: Response) {
       const starship = await pola.query('SELECT * FROM starship');
       console.log(starship);

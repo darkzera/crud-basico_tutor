@@ -5,6 +5,12 @@ import { StarshipListComponent } from './components/starship-list/starship-list.
 import { StarshipFormComponent } from "./components/starship-form/starship-form.component";
 import { StarshipPilotListComponent } from './components/starship-pilot-list/starship-pilot-list.component';
 import { StarshipPilotFormComponent } from './components/starship-pilot-form/starship-pilot-form.component';
+import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { PmComponent } from './pm/pm.component';
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 const routes: Routes = [
 
    // ----- starship
@@ -43,7 +49,33 @@ const routes: Routes = [
    {
       path: 'starships_pilot/add/:id',
       component: StarshipPilotFormComponent
-   }
+   },
+   // -- Login
+   {
+      path: 'home',
+      component: HomeComponent
+  },
+  {
+      path: 'user',
+      component: UserComponent
+  },
+  {
+      path: 'pm',
+      component: PmComponent
+  },
+  {
+      path: 'admin',
+      component: AdminComponent
+  },
+  {
+      path: 'auth/login',
+      component: LoginComponent
+  },
+  {
+      path: 'signup',
+      component: RegisterComponent
+  },
+
 ];
 
 @NgModule({
